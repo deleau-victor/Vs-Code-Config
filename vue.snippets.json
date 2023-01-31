@@ -1,0 +1,22 @@
+{
+	"Vue Single File Component": {
+		"prefix": "vuesfc",
+		"body": [
+			"<template>",
+			   "<div>${1:${TM_FILENAME_BASE}}</div>",
+			"</template>",
+			"",
+			"<script>",
+			"export default {",
+			   "name: '${1:${TM_FILENAME_BASE}}',",
+			   "components: {",
+			      "}",
+			   "}",
+			"</script>",
+			"",
+			"<style>",
+			"</style>"
+		],
+		"description": "Vue Single File Component"
+	}
+}

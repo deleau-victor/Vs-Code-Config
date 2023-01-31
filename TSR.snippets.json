@@ -1,0 +1,41 @@
+{
+	"Typescript React Arrow Function Componenent Export": {
+		"prefix": "tsxafce",
+		"body": [
+			"import React, { FC } from \"react\"",
+			"",
+			"type ${1:${TM_FILENAME_BASE}}Props = {}",
+			"",
+			"const ${1:${TM_FILENAME_BASE}}: FC<${1:${TM_FILENAME_BASE}}Props> = ({}) => {",
+			"   return <div>${1:${TM_FILENAME_BASE}}</div>",
+			"}",
+			"",
+			"export default ${1:${TM_FILENAME_BASE}}",
+			"",
+			""
+		],
+		"description": "Typescript React Arrow Function Componenent Export"
+	},
+	"Typescript React Native Arrow Function Component Export NativeBase": {
+		"prefix": "tsxnafcen",
+		"body": [
+			"import React, { FC } from \"react\"",
+			"import { Box, Text } from \"native-base\"",
+			"",
+			"type ${1:${TM_FILENAME_BASE}}Props = {}",
+			"",
+			"const ${1:${TM_FILENAME_BASE}}: FC<${1:${TM_FILENAME_BASE}}Props> = ({}) => {",
+			"   return (",
+			"       <Box>",
+			"           <Text>${1:${TM_FILENAME_BASE}}</Text>",
+			"       </Box>",
+			"   )",
+			"}",
+			"",
+			"export default ${1:${TM_FILENAME_BASE}}",
+			"",
+			""
+		],
+		"description": "Typescript React Native Arrow Function Component Export NativeBase"
+	}
+}
