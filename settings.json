@@ -1,57 +1,35 @@
 {
-	//----------------------//
-	//      WORKBENCH 		//
-	//								//
-	//   Workbench Style 	//
+	// Workbench config
 	"workbench.iconTheme": "material-icon-theme",
 	"material-icon-theme.hidesExplorerArrows": true,
 	"material-icon-theme.activeIconPack": "react_redux",
 	"material-icon-theme.folders.associations": {
-		"slices": "Redux-reducer"
+		"slices": "Redux-reducer",
+		"DTO": "Interface",
+		"comment": "Messages",
+		"pagination": "Docs"
 	},
-	"workbench.productIconTheme": "macos-modern",
-	"workbench.colorTheme": "SynthWave '84",
+	"material-icon-theme.files.associations": {
+		"*.module.ts": "Nest-module",
+		"*.controller.ts": "Nest-controller",
+		"*.service.ts": "Nest-service",
+		"*.interface.ts": "Readme",
+		"*.dto.ts": "Nest-decorator",
+		"*.model.ts": "Nest-decorator",
+		"*.resolver.ts": "Nest-resolver",
+		"*.strategy.ts": "Nest-gateway",
+		"*.guard.ts": "Nest-guard",
+		"*.middleware.ts": "Nest-middleware",
+		"*.filter.ts": "Nest-filter",
+		"*.pipe.ts": "Nest-pipe",
+		"*.mutation.ts": "GraphQL",
+		"*.query.ts": "GraphQL"
+	},
+	"workbench.colorTheme": "One Dark Pro",
 	"workbench.tree.indent": 22,
 	"workbench.tree.renderIndentGuides": "always",
-	//  Workbench Terminal	//
-	"workbench.colorCustomizations": {
-		"terminal.selectionBackground": "#b4f6c254",
-		"terminal.selectionForeground": "#b742bbfb",
-		"terminal.background": "#271f1f"
-	},
-	"terminal.integrated.profiles.windows": {
-		"PowerShell": {
-			"source": "PowerShell",
-			"icon": "terminal-powershell"
-		},
-		"Command Prompt": {
-			"path": [
-				"${env:windir}\\Sysnative\\cmd.exe",
-				"${env:windir}\\System32\\cmd.exe"
-			],
-			"args": [],
-			"icon": "terminal-cmd"
-		},
-		"Git Bash": {
-			"source": "Git Bash"
-		},
-		"Windows PowerShell": {
-			"path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-		}
-	},
-	"terminal.integrated.shellIntegration.enabled": true,
-	"terminal.integrated.fontFamily": "monolisa",
-	//----------------------//
-	//        EDITOR	 		//
-	//				 				//
-	//     Editor Style 		//
-	"editor.cursorBlinking": "smooth",
-	"editor.fontFamily": "Monolisa",
-	"editor.fontWeight": "normal",
-	"editor.fontLigatures": true,
-	"editor.lineHeight": 22,
-	//     Editor Config 	//
-	"editor.tabSize": 3,
+	"notebook.diff.enablePreview": false,
+	// Editor config
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
 	"editor.minimap.enabled": false,
@@ -59,39 +37,30 @@
 	"editor.linkedEditing": true,
 	"editor.suggest.insertMode": "replace",
 	"editor.acceptSuggestionOnCommitCharacter": false,
+	"editor.fontFamily": "Monolisa",
+	"editor.fontWeight": "normal",
+	"editor.fontLigatures": true,
+	"editor.lineHeight": 22,
+	"editor.tabSize": 3,
 	"editor.snippetSuggestions": "inline",
-	//     Files Config 		//
+	// Files config
 	"files.autoSave": "onFocusChange",
-	//   Explorer Config 	//
+	// Explorer config
 	"explorer.autoReveal": false,
 	"explorer.confirmDragAndDrop": false,
 	"explorer.confirmDelete": false,
-	//     Emmet Config 		//
+	// Emmet config
 	"emmet.triggerExpansionOnTab": true,
-	//      Git Config 		//
+	// Git config
 	"git.confirmSync": false,
 	"git.enableSmartCommit": true,
-	//   Languages Config 	//
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-	"files.associations": {
-		"*.tsx": "typescriptreact"
-	},
-	//    Prettier Config 	//
-	"prettier.bracketSameLine": true,
-	"prettier.bracketSpacing": true,
+	"git.allowForcePush": true,
+	// Prettier config
 	"prettier.jsxSingleQuote": true,
-	"prettier.enable": true,
 	"prettier.semi": false,
+	"prettier.singleQuote": true,
 	"prettier.useTabs": true,
-	"prettier.tabWidth": 3,
-	"prettier.trailingComma": "all",
-	//     Other Config 		//
-	"svgPreview.style": {},
-	"emulator.emulatorPath": "C:\\Users\\delea\\AppData\\Local\\Android\\Sdk\\emulator",
-	"emulator.emulatorPathWindows": "C:\\Users\\delea\\AppData\\Local\\Android\\Sdk\\emulator"
+	"material-icon-theme.folders.theme": "specific",
+	"git.autofetch": true,
+	"editor.inlineSuggest.enabled": true
 }
