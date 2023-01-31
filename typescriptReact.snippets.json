@@ -37,5 +37,25 @@
 			""
 		],
 		"description": "Typescript React Native Arrow Function Component Export NativeBase"
+	},
+	"useState": {
+		"prefix": "useST",
+		"body": [
+			"const [${1:name}, set${1:Name}] = useState<${2:type}>(${3:initialState})"
+		],
+		"description": "Typescript React UseState"
+	},
+	"useEffect": {
+		"prefix": "useEF",
+		"body": [
+			"useEffect(() => {",
+			"   ${1:first}",
+			"",
+			"   return () => {",
+			"      ${2:second}",
+			"   }",
+			"}, [${3:dependencies}])"
+		],
+		"description": "Typescript React UseEffect"
 	}
 }
