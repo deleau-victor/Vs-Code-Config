@@ -58,6 +58,47 @@
 		],
 		"description": "Typescript React UseEffect"
 	},
+	"useCallback": {
+		"prefix": "useCallback",
+		"body": [
+			"const ${1:name} = useCallback(() =>",
+			"   ${2:callback}",
+			", [${3:dependencies}])"
+		],
+		"description": "Typescript React UseCallback"
+	},
+	"useMemo": {
+		"prefix": "useMemo",
+		"body": ["useMemo(() => {${1:callback}}, [${2:dependencies}])"],
+		"description": "Typescript React UseMemo"
+	},
+	"useRef": {
+		"prefix": "useRef",
+		"body": ["const ${1:name} = useRef(${2:initialState})"],
+		"description": "Typescript React UseRef"
+	},
+	"useContext": {
+		"prefix": "useContext",
+		"body": ["const ${1:name} = useContext()"],
+		"description": "Typescript React UseContext"
+	},
+	"useId": {
+		"prefix": "useId",
+		"body": ["const ${1:name} = useId()"],
+		"description": "Typescript React UseId"
+	},
+	"useTransition": {
+		"prefix": "useTransition",
+		"body": ["const [isPending, startTransition] = useTransition()"],
+		"description": "Typescript React UseTransition"
+	},
+	"useReducer": {
+		"prefix": "useReducer",
+		"body": [
+			"const [state, dispatch] = useReducer(${1:reducer}, ${2:initialState}, ${3:init})"
+		],
+		"description": "Typescript React UseReducer"
+	},
 	"useAppDispatch": {
 		"prefix": "useAppDispatch",
 		"body": ["const dispatch = useAppDispatch()"],
