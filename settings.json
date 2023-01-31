@@ -1,6 +1,12 @@
 {
 	// Workbench config
 	"workbench.iconTheme": "material-icon-theme",
+	"workbench.colorTheme": "One Dark Pro",
+	"workbench.tree.indent": 22,
+	"workbench.tree.renderIndentGuides": "always",
+	"notebook.diff.enablePreview": false,
+	// Material Icon Theme config
+	"material-icon-theme.folders.theme": "specific",
 	"material-icon-theme.hidesExplorerArrows": true,
 	"material-icon-theme.activeIconPack": "react_redux",
 	"material-icon-theme.folders.associations": {
@@ -25,10 +31,6 @@
 		"*.mutation.ts": "GraphQL",
 		"*.query.ts": "GraphQL"
 	},
-	"workbench.colorTheme": "One Dark Pro",
-	"workbench.tree.indent": 22,
-	"workbench.tree.renderIndentGuides": "always",
-	"notebook.diff.enablePreview": false,
 	// Editor config
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
@@ -43,6 +45,7 @@
 	"editor.lineHeight": 22,
 	"editor.tabSize": 3,
 	"editor.snippetSuggestions": "inline",
+	"editor.inlineSuggest.enabled": true,
 	// Files config
 	"files.autoSave": "onFocusChange",
 	// Explorer config
@@ -55,12 +58,10 @@
 	"git.confirmSync": false,
 	"git.enableSmartCommit": true,
 	"git.allowForcePush": true,
+	"git.autofetch": true,
 	// Prettier config
 	"prettier.jsxSingleQuote": true,
 	"prettier.semi": false,
 	"prettier.singleQuote": true,
-	"prettier.useTabs": true,
-	"material-icon-theme.folders.theme": "specific",
-	"git.autofetch": true,
-	"editor.inlineSuggest.enabled": true
+	"prettier.useTabs": true
 }
