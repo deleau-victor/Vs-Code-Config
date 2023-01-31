@@ -57,5 +57,15 @@
 			"}, [${3:dependencies}])"
 		],
 		"description": "Typescript React UseEffect"
+	},
+	"useAppDispatch": {
+		"prefix": "useAppDispatch",
+		"body": ["const dispatch = useAppDispatch()"],
+		"description": "useAppDispatch"
+	},
+	"useAppSelector": {
+		"prefix": "useAppSelector",
+		"body": ["const {} = useAppSelector((state) => state.${1:fisrt})"],
+		"description": "useAppSelector"
 	}
 }
