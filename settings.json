@@ -1,19 +1,16 @@
 {
 	// Workbench config
 	"workbench.iconTheme": "material-icon-theme",
-	"workbench.colorTheme": "One Dark Pro",
-	"workbench.tree.indent": 22,
-	"workbench.tree.renderIndentGuides": "always",
-	"notebook.diff.enablePreview": false,
-	// Material Icon Theme config
-	"material-icon-theme.folders.theme": "specific",
 	"material-icon-theme.hidesExplorerArrows": true,
 	"material-icon-theme.activeIconPack": "react_redux",
+	"material-icon-theme.folders.theme": "specific",
 	"material-icon-theme.folders.associations": {
 		"slices": "Redux-reducer",
 		"DTO": "Interface",
-		"comment": "Messages",
-		"pagination": "Docs"
+		"pagination": "Docs",
+		"section": "template",
+		"form": "content",
+		"ui": "components"
 	},
 	"material-icon-theme.files.associations": {
 		"*.module.ts": "Nest-module",
@@ -29,8 +26,14 @@
 		"*.filter.ts": "Nest-filter",
 		"*.pipe.ts": "Nest-pipe",
 		"*.mutation.ts": "GraphQL",
-		"*.query.ts": "GraphQL"
+		"*.query.ts": "GraphQL",
+		"*.slice.ts": "Redux-reducer",
+		"redux.provider.tsx": "Redux-store"
 	},
+	"workbench.colorTheme": "One Dark Pro",
+	"workbench.tree.indent": 22,
+	"workbench.tree.renderIndentGuides": "always",
+	"notebook.diff.enablePreview": false,
 	// Editor config
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
@@ -40,7 +43,7 @@
 	"editor.suggest.insertMode": "replace",
 	"editor.acceptSuggestionOnCommitCharacter": false,
 	"editor.fontFamily": "Monolisa",
-	"editor.fontWeight": "normal",
+	"editor.fontWeight": "100",
 	"editor.fontLigatures": true,
 	"editor.lineHeight": 22,
 	"editor.tabSize": 3,
@@ -63,5 +66,13 @@
 	"prettier.jsxSingleQuote": true,
 	"prettier.semi": false,
 	"prettier.singleQuote": true,
-	"prettier.useTabs": true
+	"prettier.useTabs": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"github.copilot.enable": {
+		"*": true,
+		"yaml": false,
+		"plaintext": false,
+		"markdown": false
+	},
+	"terminal.integrated.defaultProfile.windows": "PowerShell"
 }
