@@ -127,5 +127,25 @@
 		"prefix": "useAppSelector",
 		"body": ["const {} = useAppSelector((state) => state.${1:fisrt})"],
 		"description": "useAppSelector"
+	},
+	"useRouter": {
+		"prefix": "useRouter",
+		"body": ["const router = useRouter()"],
+		"description": "useRouter"
+	},
+	"useSupabase": {
+		"prefix": "useSupabase",
+		"body": ["const supabase = useSupabase()"],
+		"description": "useSupabase"
+	},
+	"fetchSupabaseData": {
+		"prefix": "fetchSupabaseData",
+		"body": [
+			"const { data, error } = await supabase",
+			"   .from('${1:table}')",
+			"   .select('${2:column}')",
+			"   .eq('${3:column}', ${4:value})"
+		],
+		"description": "fetchSupabaseData"
 	}
 }

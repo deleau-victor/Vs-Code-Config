@@ -33,13 +33,10 @@
 		"*.query.ts": "GraphQL",
 		"*.slice.ts": "Redux-reducer",
 		"redux.provider.tsx": "Redux-store",
+		"*.redux.tsx": "Redux-store",
 		"*.scss": "tailwindcss",
 		"_index.scss": "tailwindred",
-		"supabase.provider.tsx": "Supabase",
-		"supabase.listener.tsx": "Supabase",
-		"supabase.autoAuth.tsx": "Supabase",
-		"supabase-client.ts": "Supabase",
-		"supabase-server.ts": "Supabase"
+		"*.supabase.tsx": "Supabase"
 	},
 	"workbench.colorTheme": "One Dark Pro",
 	"workbench.tree.indent": 22,
