@@ -1,6 +1,6 @@
-# Fichiers de configurations Visual Studio Code & Snippets
+# Fichiers de configurations
 
-## Configuration de l'éditeur
+## Configuration de l'éditeur Vs code
 
 Pour accéder au fichier de paramètre de l'éditeur en json sur Visual studio code.
 
@@ -12,7 +12,7 @@ CTRL + SHIFT + P > Preferences : Open User Settings (JSON)
 CMD + SHIFT + P > Preferences : Open User Settings (JSON)
 ```
 
-## Configuration des Snippets
+## Configuration des Snippets vs code
 
 Pour accéder aux fichiers de snippets de l'éditeur sur Visual studio code.
 

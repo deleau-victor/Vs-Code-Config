@@ -1,87 +1,208 @@
 {
-	// Workbench config
-	"workbench.iconTheme": "material-icon-theme",
-	"material-icon-theme.hidesExplorerArrows": true,
-	"material-icon-theme.activeIconPack": "react_redux",
-	"material-icon-theme.folders.theme": "specific",
-	"material-icon-theme.folders.associations": {
-		"slices": "Redux-reducer",
-		"DTO": "Interface",
-		"pagination": "Docs",
-		"section": "template",
-		"form": "content",
-		"ui": "components",
-		"strategies": "log",
-		"nodejs": "Node",
-		"nestjs": "nest",
-		"nextjs": "Next"
-	},
-	"material-icon-theme.files.associations": {
-		"*.module.ts": "Nest-module",
-		"*.controller.ts": "Nest-controller",
-		"*.service.ts": "Nest-service",
-		"*.interface.ts": "Readme",
-		"*.dto.ts": "Nest-decorator",
-		"*.model.ts": "Nest-decorator",
-		"*.resolver.ts": "Nest-resolver",
-		"*.strategy.ts": "Nest-gateway",
-		"*.guard.ts": "Nest-guard",
-		"*.middleware.ts": "Nest-middleware",
-		"*.filter.ts": "Nest-filter",
-		"*.pipe.ts": "Nest-pipe",
-		"*.mutation.ts": "GraphQL",
-		"*.query.ts": "GraphQL",
-		"*.slice.ts": "Redux-reducer",
-		"redux.provider.tsx": "Redux-store",
-		"*.redux.tsx": "Redux-store",
-		"*.scss": "tailwindcss",
-		"_index.scss": "tailwindred",
-		"*.supabase.tsx": "Supabase"
+	// *******************************************
+	// ************ Workbench Config *************
+	// *******************************************
+	"workbench.colorCustomizations": {
+		"editor.lineHighlightBackground": "#1073cf2d",
+		"editor.lineHighlightBorder": "#9fced11f"
 	},
 	"workbench.colorTheme": "One Dark Pro",
+	"workbench.iconTheme": "material-icon-theme",
 	"workbench.tree.indent": 22,
 	"workbench.tree.renderIndentGuides": "always",
 	"notebook.diff.enablePreview": false,
-	// Editor config
+	// *******************************************
+	// ************** Editor Config **************
+	// *******************************************
+	"editor.acceptSuggestionOnCommitCharacter": false,
+	"editor.accessibilitySupport": "off",
+	"editor.cursorBlinking": "solid",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[csharp]": {
+		"editor.defaultFormatter": "ms-dotnettools.csharp"
+	},
+	"editor.fontFamily": "'Monolisa Nerd Font Mono'",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 14,
+	"editor.fontWeight": "normal",
 	"editor.formatOnSave": true,
+	"editor.guides.bracketPairs": false,
+	"editor.guides.indentation": false,
+	"editor.inlayHints.enabled": "off",
+	"editor.inlineSuggest.enabled": true,
+	"editor.inlineSuggest.showToolbar": "always",
+	"editor.lineHeight": 22,
+	"editor.linkedEditing": true,
 	"editor.minimap.enabled": false,
 	"editor.renderWhitespace": "trailing",
-	"editor.linkedEditing": true,
-	"editor.suggest.insertMode": "replace",
-	"editor.acceptSuggestionOnCommitCharacter": false,
-	"editor.fontFamily": "Monolisa",
-	"editor.fontWeight": "100",
-	"editor.fontLigatures": true,
-	"editor.lineHeight": 22,
-	"editor.tabSize": 3,
 	"editor.snippetSuggestions": "inline",
-	"editor.inlineSuggest.enabled": true,
-	// Files config
+	"editor.suggest.insertMode": "replace",
+	"editor.tabSize": 3,
+	"editor.wordWrap": "on",
+	"editor.wordWrapColumn": 100,
+	// *******************************************
+	// *********** Diff Editor Config ************
+	// *******************************************
+	"diffEditor.wordWrap": "on",
+	// *******************************************
+	// ************** Files Config ***************
+	// *******************************************
 	"files.autoSave": "onFocusChange",
-	// Explorer config
+	"files.eol": "\n",
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"**/bin/**": true,
+		"**/obj/**": true
+	},
+	// *******************************************
+	// ************* Explorer Config *************
+	// *******************************************
 	"explorer.autoReveal": false,
-	"explorer.confirmDragAndDrop": false,
 	"explorer.confirmDelete": false,
-	// Emmet config
+	"explorer.confirmDragAndDrop": false,
+	// *******************************************
+	// ************ Javascript Config ************
+	// *******************************************
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"vue.updateImportsOnFileMove.enabled": true,
+	// *******************************************
+	// ************** Emmet Config ***************
+	// *******************************************
 	"emmet.triggerExpansionOnTab": true,
-	// Git config
+	// *******************************************
+	// *************** Git Config ****************
+	// *******************************************
+	"git.autofetch": true,
 	"git.confirmSync": false,
 	"git.enableSmartCommit": true,
-	"git.allowForcePush": true,
-	"git.autofetch": true,
-	// Prettier config
-	"prettier.jsxSingleQuote": true,
-	"prettier.semi": false,
+	// "git.path": "\\\\wsl.localhost\\Debian\\usr\\bin\\git", => If you want to use WSL git
+	// *******************************************
+	// ************* Prettier Config *************
+	// *******************************************
+	"prettier.arrowParens": "always",
+	"prettier.bracketSpacing": true,
+	"prettier.printWidth": 100,
+	"prettier.semi": true,
 	"prettier.singleQuote": true,
-	"prettier.useTabs": true,
-	"security.workspace.trust.untrustedFiles": "open",
-	"github.copilot.enable": {
-		"*": true,
-		"yaml": false,
-		"plaintext": false,
-		"markdown": false
+	"prettier.useTabs": false,
+	"prettier.endOfLine": "lf",
+	// *******************************************
+	// ************* Material Config *************
+	// *******************************************
+	"material-icon-theme.activeIconPack": "vue_vuex",
+	"material-icon-theme.folders.theme": "specific",
+	"material-icon-theme.hidesExplorerArrows": true,
+	// *******************************************
+	// ************* Terminal Config *************
+	// *******************************************
+	"terminal.integrated.defaultProfile.windows": "Debian (WSL)",
+	"terminal.integrated.fontFamily": "MesloLGS NF",
+	"terminal.integrated.profiles.windows": {
+		"Command Prompt": {
+			"path": [
+				"${env:windir}\\Sysnative\\cmd.exe",
+				"${env:windir}\\System32\\cmd.exe"
+			],
+			"args": [],
+			"icon": "terminal-cmd"
+		},
+		"Debian (WSL)": {
+			"path": "C:\\windows\\System32\\wsl.exe",
+			"args": ["-d", "Debian"]
+		},
+		"Git Bash": {
+			"source": "Git Bash"
+		},
+		"PowerShell": {
+			"source": "PowerShell",
+			"icon": "terminal-powershell"
+		}
 	},
-	"terminal.integrated.defaultProfile.windows": "PowerShell",
-	"typescript.updateImportsOnFileMove.enabled": "always"
+	// *******************************************
+	// ************* Security Config *************
+	// *******************************************
+	"security.allowedUNCHosts": ["wsl.localhost"],
+	"security.workspace.trust.untrustedFiles": "open",
+	// *******************************************
+	// ************** CSpell Config **************
+	// *******************************************
+	"cSpell.language": "en,fr",
+	"gitlens.views.pullRequest.files.layout": "list",
+	"xml.server.preferBinary": true,
+	"http.proxyStrictSSL": false,
+	"http.proxy": null,
+	// *******************************************
+	// ********** Better Comment Config **********
+	// *******************************************
+	"better-comments.tags": [
+		{
+			"tag": "!",
+			"color": "#FF2D00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "?",
+			"color": "#3498DB",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "//",
+			"color": "#474747",
+			"strikethrough": true,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "todo",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "*",
+			"color": "#98C379",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "#region",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "#endregion",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		}
+	]
 }

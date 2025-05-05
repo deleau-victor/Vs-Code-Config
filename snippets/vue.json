@@ -1,0 +1,22 @@
+{
+	"Vue Component": {
+		"prefix": "VC",
+		"description": "A simple vue component",
+		"body": [
+			"<template>",
+			"  <p class=\"text\">Hello from ${TM_FILENAME_BASE}</p>",
+			"  <p>Ref is {{ example }}</p>",
+			"</template>",
+			"<script lang=\"ts\" async setup>",
+			"const example = ref<string>('hello');",
+			"</script>",
+			"<style lang=\"scss\" scoped>",
+			".text {",
+			"  font-size: medium;",
+			"  font-weight: 500;",
+			"}",
+			"</style>",
+			""
+		]
+	}
+}

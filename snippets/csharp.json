@@ -1,0 +1,12 @@
+{
+	"GetSet": {
+		"prefix": "gs",
+		"body": "{ get; set; }",
+		"description": "Getter and setter"
+	},
+	"GetInit": {
+		"prefix": "gi",
+		"body": "{ get; init; }",
+		"description": "Getter and initializer"
+	}
+}

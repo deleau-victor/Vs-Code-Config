@@ -1,0 +1,76 @@
+# Identité
+[user]
+	name = "First Name, Last Name"
+	email = "email@example.com"
+
+# Core
+[core]
+   excludesfile = ~/.gitignore
+	autocrlf = input
+   conflictstyle = zdiff3
+	sshCommand = ssh -i ~/.ssh/id_rsa
+
+# Initialisation des repos
+[init]
+   defaultBranch = main
+
+# Configuration de l'affichage et du tri
+[column]
+   ui = auto
+[branch]
+   sort = -committerdate
+[tag]
+   sort = version:refname
+
+# Configuration des différences et des fusions
+[diff]
+   algorithm = histogram
+   colorMoved = plain
+   mnemonicPrefix = true
+   renames = true
+	tool = vscode
+[difftool "vscode"]
+	path = PathTo/Microsoft VS Code/Code.exe
+	cmd = \"PathTo/Microsoft VS Code/Code.exe\" --new-window --wait --diff \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	path = PathTo/Microsoft VS Code/Code.exe
+	cmd = \"PathTo/Microsoft VS Code/Code.exe\" --new-window --wait --merge \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\"
+
+# Configuration des actions de pull/push/fetch
+[push]
+   default = simple
+   autoSetupRemote = true
+   followTags = true
+[fetch]
+   prune = true
+   pruneTags = true
+   all = true
+[pull]
+	rebase = false
+
+# Configuration avancée des conflits et du rebase
+[rerere]
+   enabled = true
+   autoupdate = true
+[rebase]
+   autoSquash = true
+   autoStash = true
+   updateRefs = true
+
+# Configuration de l’aide et de l’édition des commits
+[help]
+   autocorrect = prompt
+[commit]
+   verbose = true
+
+# Alias
+[alias]
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+  lg = log --oneline --graph --all --decorate
+  unstage = reset HEAD --
+  last = log -1 HEAD
